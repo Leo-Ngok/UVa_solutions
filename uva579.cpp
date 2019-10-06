@@ -14,4 +14,5 @@ int main() {
         if(res>180) res=360-res;
         printf("%.3f\n",res);
     }
+    return 0;
 }
