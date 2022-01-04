@@ -8,13 +8,12 @@ int main(){
 	for(int u=1;u<=n;u++){
 		a[0]=1;	
 		for(int k=1;k<=u;k++){
-			for(int m=0;m<100;m++)
-				a[m]*=k;		
-		for(int p=0;p<100;p++)
-			if(a[p]>=10){
-				a[p+1]+=a[p]/10;
-				a[p]%=10;
-			}		
+			for(int m=0;m<100;m++)a[m]*=k;		
+			for(int p=0;p<100;p++)
+				if(a[p]>=10){
+					a[p+1]+=a[p]/10;
+					a[p]%=10;
+				}		
 		}
 		for(int r=0;r<100;r++){
 			b[r]+=a[r];
